@@ -1,6 +1,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -9,55 +10,73 @@
 <body>
 	<div class="page-wrapper">
 
-		<div class="header-wrapper">
+		<div class="wrap header-wrapper">
 			<header class="page-header">
 				 <div class="page-header__logo"><a href="index.html">star talk</a></div>
 				 <div class="page-header__contacts">
 					 <a href="">8-800-500-33-98</a>
-					 <span>г. Петрозаводск, ул. Тухачевского 65а</span>
+					 <p>г. Петрозаводск, ул. Тухачевского 65а</p>
 				 </div>
 				 <div class="page-header__login">
 					<p>Личный кабинет для родителей.</p>
-					<span class="material-icons">vpn_key</span>
+				<span class="material-icons">vpn_key</span>
 				 </div>	
 			</header>
 		</div>
 
-		<div class="main-banner-wrap">
+		<div class="wrap main-banner-wrap">
 			<section class="main-banner">
-				<h1 class="main-banner__header">Клуб английского языка для детей</h1>
+				<h1 class="main-banner__header">Клуб английского<br> языка для детей</h1>
 				<p>Мы собрали для вас сотни лучших каналов со всего мира!<br>Убедитесь в этом сами!</p>
 				<button class="btn main-banner__button">Попробовать бесплатно</button>	
 			</section>
 		</div>
 
-		<section class="features">
-			<div class="features-item"><span>Первое занятие бесплатно</span></div>
-			<div class="features-item"><span>Бесплатные учебные материалы</span></div>
-			<div class="features-item"><span>Комфортное размещение детей</span></div>
-		</section>
+		<div class="wrap">
+			<section class="features">
+				<div class="features-item">
+					<div class="features-item__label">
+						1
+					</div>
+					<span>Первое занятие бесплатно</span>
+				</div>
+				<div class="features-item">
+					<div class="features-item__label">
+						2
+					</div>
+					<span>Бесплатные учебные материалы</span>
+				</div>
+				<div class="features-item">
+					<div class="features-item__label">
+						3
+					</div>
+					<span>Комфортное размещение детей</span>
+				</div>
+			</section>
+		</div>
+		
 
 		<div class="courses-wrap">
 				<section class="courses">
 						<h1 class="section-header">Наши программы</h1>
 						<div class="courses__item">
 							<h2>Хитрый лис</h2>
-							<p>для дошкольников 6-8лет 2 раза в неделю 30 по минут</p>
+							<p>для дошкольников 6-8 лет 2 раза в неделю 30 по минут</p>
 							<button class="btn">Подробнее</button>
 						</div>
 						<div class="courses__item">
 							<h2>Умный волк</h2>
-							<p>для дошкольников 6-8лет 2 раза в неделю 30 по минут</p>
+							<p>для дошкольников 6-8 лет 2 раза в неделю 30 по минут</p>
 							<button class="btn">Подробнее</button>
 						</div>
 						<div class="courses__item">
 							<h2>Сильный мишка</h2>
-							<p>для дошкольников 6-8лет 2 раза в неделю 30 по минут</p>
+							<p>для дошкольников 6-8 лет 2 раза в неделю 30 по минут</p>
 							<button class="btn">Подробнее</button>
 						</div>
 						<div class="courses__item">
 							<h2>Храбрый кролик</h2>
-							<p>для дошкольников 6-8лет 2 раза в неделю 30 по минут</p>
+							<p>для дошкольников 6-8 лет 2 раза в неделю 30 по минут</p>
 							<button class="btn">Подробнее</button>
 						</div>	
 				</section>
@@ -67,22 +86,24 @@
 			<section class="supervision">
 				<h1 class="section-header">Под вашим присмотром</h1>
 				<p>Мы уверены в наших преподавателях, но для вашего спокойствия в клубе установлены веб-камеры, с помощью которых вы можете следить за занятиями. Подключитесь к камере через личный кабинет на сайте или <a href="#">скачайте</a> наше мобильное приложение.</p>
-				<div class="section-item">
-					Камера на сайте и в приложении
+				<div class="supervision__item">
+					<div><i class="material-icons">videocam</i></div>
+					<span>Камера на сайте и в приложении</span>				
 				</div>
-				<div class="section-item">
-						Доступ к камере только для родителей
+				<div class="supervision__item">
+						<div><i class="material-icons">lock</i></div>
+						 <span>Доступ к камере только для родителей</span>
 				</div>
 			</section>
 		</div>
 
-		<div class="feedback-wrap">
+		<div class="wrap feedback-wrap">
 			<section class="feedback">
 					<h1 class="section-header">Отзывы родителей</h1>
 			</section>	
 		</div>
 
-		<div class="our-teachers-wrap">
+		<div class="wrap our-teachers-wrap">
 			<section class="our-teachers">
 				<h1 class="section-header">Наши преподаватели</h1>
 				<h2>Ирина Витальевна Кулакова</h2>
@@ -96,7 +117,7 @@
 			</section>
 		</div>
 
-		<div class="bonuses-wrap">
+		<div class="wrap bonuses-wrap">
 			<section class="bonuses">
 					<h1 class="section-header">Бонусы и подарки</h1>
 					<div class="courses__item">
@@ -112,7 +133,7 @@
 			</section>
 		</div>
 
-		<div class="footer-wrap">
+		<div class="wrap footer-wrap">
 			<footer class="page-footer">
 				 <div class="page-footer__copyrights">
 					 <p>© StarTalk 2017</p>
