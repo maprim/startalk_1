@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto:500,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto:400,500,700&subset=cyrillic');
 html,
 body {
   box-sizing: border-box;
@@ -26,7 +26,7 @@ p {
   padding: 0;
 }
 .wrap {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .btn {
   border: none;
@@ -85,7 +85,10 @@ p {
 }
 .page-header__login span {
   display: inline-block;
-  padding: 24px 24px;
+  height: 64px;
+  width: 64px;
+  text-align: center;
+  line-height: 60px;
   color: #ffffff;
   cursor: pointer;
   background-image: linear-gradient(to top, #accb4b, #cae37a);
@@ -115,10 +118,7 @@ p {
   margin-bottom: 15px;
 }
 .features {
-  display: flex;
-  justify-content: space-around;
   padding-top: 35px;
-  padding-bottom: 30px;
 }
 .features-item__label {
   font-size: 20px;
@@ -128,13 +128,14 @@ p {
   text-align: center;
   line-height: 60px;
   margin: 0 auto;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   color: #fff;
   display: block;
   background-image: linear-gradient(to top, #accb4b, #cae37a);
 }
 .features-item {
   text-align: center;
+  margin-bottom: 40px;
 }
 .features-item span {
   text-transform: uppercase;
@@ -145,24 +146,24 @@ p {
 }
 .courses {
   background-color: #f4f4f4;
-  padding: 30px 0;
+  padding: 30px 15px;
 }
 .courses h1 {
   margin-bottom: 30px;
   margin-left: 15px;
 }
 .courses__item {
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px 20px;
   background-image: url("../img/fox.jpg");
   background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-size: contain;
+  background-position: 100% 100%;
+  background-size: 50%;
   margin-bottom: 30px;
 }
 .courses__item h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 20px;
 }
 .courses__item p {
@@ -171,7 +172,7 @@ p {
   text-align: left;
   color: #7b7a7a;
   max-width: 75%;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .supervision {
   padding: 50px 0 30px 0;
@@ -188,7 +189,7 @@ p {
 .supervision p {
   color: #666666;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4;
   max-width: 85%;
   margin-bottom: 30px;
@@ -215,4 +216,110 @@ p {
   max-width: 40%;
   margin-left: 15px;
   color: #666666;
+}
+.feedback-wrap {
+  background-image: url("../img/feedback.jpg");
+  background-repeat: no-repeat;
+  padding: 40px 15px;
+}
+.feedback {
+  padding: 30px 50px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.feedback h1 {
+  margin-bottom: 20px;
+}
+.feedback img {
+  display: none;
+  height: 164px;
+  width: 164px;
+  border-radius: 50%;
+}
+.feedback h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.feedback p {
+  color: #666666;
+  line-height: 1.59;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.feedback .vk-item {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  line-height: 60px;
+  background-image: linear-gradient(to top, #507299, #5b88bb);
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.feedback span {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 80%;
+  margin-left: 15px;
+  color: #666666;
+}
+.carousel {
+  position: relative;
+}
+.carousel .carousel__bk-button,
+.carousel .carousel__fw-button {
+  color: #a3a3a3;
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+  height: 64px;
+  width: 64px;
+  text-align: center;
+  line-height: 60px;
+  z-index: 1000;
+}
+.carousel .carousel__bk-button {
+  left: -19%;
+}
+.carousel .carousel__fw-button {
+  right: -19%;
+}
+.bonuses-wrap {
+  background-color: #f4f4f4;
+}
+.bonuses {
+  padding: 30px 15px;
+}
+.bonuses h1 {
+  margin-bottom: 30px;
+}
+.footer-wrap {
+  background-color: #3b3b3b;
+}
+footer {
+  color: #7b7a7a;
+  padding: 30px 0;
+  line-height: 1.59;
+}
+.page-footer__item {
+  margin-bottom: 30px;
+}
+.socials {
+  padding-bottom: 20px;
+}
+.socials p {
+  margin-bottom: 10px;
+}
+.socials__item {
+  margin-right: 25px;
+}
+.socials__item img {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.app p {
+  margin-bottom: 10px;
 }
