@@ -220,10 +220,10 @@ p {
 .feedback-wrap {
   background-image: url("../img/feedback.jpg");
   background-repeat: no-repeat;
-  padding: 40px 15px;
+  padding: 15px;
 }
 .feedback {
-  padding: 30px 50px;
+  padding: 30px 15px;
   background-color: #fff;
   border-radius: 6px;
 }
@@ -237,6 +237,7 @@ p {
   border-radius: 50%;
 }
 .feedback h2 {
+  text-align: center;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -244,7 +245,7 @@ p {
   color: #666666;
   line-height: 1.59;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin: 0 30px 20px 30px;
 }
 .feedback .vk-item {
   width: 64px;
@@ -281,10 +282,29 @@ p {
   z-index: 1000;
 }
 .carousel .carousel__bk-button {
-  left: -19%;
+  left: -9%;
 }
 .carousel .carousel__fw-button {
-  right: -19%;
+  right: -9%;
+}
+.our-teachers {
+  padding: 30px 15px;
+}
+.our-teachers h1 {
+  margin-bottom: 20px;
+}
+.our-teachers h2 {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.our-teachers .our-teachers_discription {
+  font-size: 15px;
+  color: #7b7a7a;
+}
+.our-teachers img {
+  height: 120px;
+  display: inline-block;
+  border-radius: 50%;
 }
 .bonuses-wrap {
   background-color: #f4f4f4;
@@ -321,5 +341,14 @@ footer {
   width: 20px;
 }
 .app p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.app a {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.app img {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 194px;
 }
