@@ -6,9 +6,18 @@
   background-position-y: 100%;
   background-size: 60%;
   padding-left: 15px;
+  
+  .for-tablet({
+    padding: 100px 15px 50px 15px;
+    background-position-x: 100%;
+    background-size: contain;
+ });
 
   h1{
     margin-bottom: 10px;
+    .for-tablet({
+      max-width: 250px;
+   });
   }
   p {
     color: @grey-font;
@@ -17,6 +26,11 @@
     line-height: 1.4;
     max-width: 85%;
     margin-bottom: 30px;
+
+    .for-tablet({
+      max-width: 50%;
+   });
+
   }
 }
 

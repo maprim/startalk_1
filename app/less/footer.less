@@ -7,10 +7,17 @@ footer {
   color: @light-grey-font;
   padding: 30px 0;
   line-height: 1.59;
+
+  .for-tablet({
+    padding: 60px 15px;
+    display: flex;
+    justify-content: space-between;
+   });
 }
 
 .page-footer__item {
   margin-bottom: 30px;
+  margin-right: 30px;
 }
 .socials {
   p {
@@ -26,6 +33,14 @@ footer {
   display: inline-block;
   height: 20px;
   width: 20px;
+}
+
+.page-footer__conatcts {
+
+  .for-tablet({
+   max-width: 500px;
+   });
+
 }
 
 .app {

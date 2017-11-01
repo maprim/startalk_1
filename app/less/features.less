@@ -1,6 +1,15 @@
 
 .features{
   padding-top: 35px;
+
+  .for-desktop-up({
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 107px 0 134px 0;
+ });
+
 }
 
 .features-item__label{
@@ -15,11 +24,22 @@
     color: #fff;
     display: block;
     background-image: linear-gradient(to top, #accb4b, #cae37a);
+
+    .for-desktop-up({
+      display: inline-block;
+      margin: 0;
+      margin-right: 15px;
+   });
 }
 
 .features-item {
   text-align: center;
   margin-bottom: 40px;
+
+  .for-desktop-up({
+    margin-bottom: 0;
+ });
+  
 
   span {
     text-transform: uppercase;
@@ -27,5 +47,14 @@
     line-height: 20px;
     font-size: 12px;
     font-weight: bold;
+
+    .for-desktop-up({
+      display: inline-block;
+      max-width: 200px;
+      text-align: left;
+      vertical-align: middle;
+   });
+
   }
+
 }

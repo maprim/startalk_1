@@ -12,5 +12,37 @@
 @comfortaa-font: 'Comfortaa', cursive;
 
 
+// @mixin for-phone-only {
+//   @media (max-width: 599px) { }
+// }
+// @mixin for-tablet-portrait-up {
+//   @media (min-width: 600px) {  }
+// }
 
+.for-tablet (@rules) {
+  @media (min-width: 760px) {
+      @rules();
+     }
+}
 
+.for-desktop-up (@rules) {
+  @media (min-width: 1200px) {
+    @rules();
+   }
+}
+
+// @mixin for-desktop-up {
+//   @media (min-width: 1200px) {  }
+// }
+// @mixin for-big-desktop-up {
+//   @media (min-width: 1800px) {}
+// }
+
+// // usage
+// .my-box {
+//   padding: 10px;
+  
+//   @include for-desktop-up {
+//     padding: 20px;
+//   }
+// }

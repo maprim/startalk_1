@@ -12,7 +12,7 @@
 
 		<div class="wrap header-wrapper">
 			<header class="page-header">
-				 <div class="page-header__logo"><a href="index.html">star talk</a></div>
+				 <div class="page-header__logo"><a href="index.html"><img src="img/logo.jpg" alt="star talk" width="192" height="26"></a></div>
 				 <div class="page-header__contacts">
 					 <a href="">8-800-500-33-98</a>
 					 <p>г. Петрозаводск, ул. Тухачевского 65а</p>
@@ -56,9 +56,10 @@
 		</div>
 		
 
-		<div class="courses-wrap">
+		<div class="courses-wrap wrap">
 				<section class="courses">
-						<h1 class="section-header">Наши программы</h1>
+					<h1 class="section-header">Наши программы</h1>
+					<div class="courses__item-wrap">
 						<div class="courses__item">
 							<h2>Хитрый лис</h2>
 							<p>для дошкольников 6-8 лет 2 раза в неделю 30 по минут</p>
@@ -78,11 +79,12 @@
 							<h2>Храбрый кролик</h2>
 							<p>для дошкольников 6-8 лет 2 раза в неделю 30 по минут</p>
 							<button class="btn">Подробнее</button>
-						</div>	
+						</div>
+					</div>						
 				</section>
 		</div>
 		
-		<div class="supervision-wrap">
+		<div class="supervision-wrap wrap">
 			<section class="supervision">
 				<h1 class="section-header">Под вашим присмотром</h1>
 				<p>Мы уверены в наших преподавателях, но для вашего спокойствия в клубе установлены веб-камеры, с помощью которых вы можете следить за занятиями. Подключитесь к камере через личный кабинет на сайте или <a href="#">скачайте</a> наше мобильное приложение.</p>
@@ -97,51 +99,61 @@
 			</section>
 		</div>
 
-		<div class="feedback-wrap">
+		<div class="feedback-wrap wrap">
 			<section class="feedback">
 					<h1 class="section-header">Отзывы родителей</h1>
 					<div class="carousel feedback__carousel">
 						<div class="carousel__bk-button"><i class="material-icons">keyboard_arrow_left</i></div>							
-						<img src="/img/userpic.jpg" alt="">
-						<h2>«Растём вместе с клубом»</h2>
-						<p>Мой сын обожает английский язык и ходит в клуб с удовольствием, так как кроме занятий здесь проводятся тематические веселые праздники с массой игр и сюрпризов. Отдельное спасибо за эти прекрасные мероприятия руководителю Кулаковой И.В.</p>
-						<a class="vk-item" href="#">vk</a>
-						<span>Елена Самойленко,<br> 
-							г. Комсомольск-на-Амуре</span>
+						<div class="carousel__content-wrap">
+							<img src="/img/userpic.jpg" alt="">
+							<h2>«Растём вместе с клубом»</h2>
+							<p>Мой сын обожает английский язык и ходит в клуб с удовольствием, так как кроме занятий здесь проводятся тематические веселые праздники с массой игр и сюрпризов. Отдельное спасибо за эти прекрасные мероприятия руководителю Кулаковой И.В.</p>
+							<a class="vk-item" href="#">vk</a>
+							<span>Елена Самойленко,<br> 
+								г. Комсомольск-на-Амуре</span>
+						</div>
+						
 						<div class="carousel__fw-button"><i class="material-icons">keyboard_arrow_right</i></div>
 					</div>
 
 			</section>	
 		</div>
 
-		<div class="our-teachers-wrap">
+		<div class="our-teachers-wrap wrap">
 			<section class="our-teachers">
-				<h1 class="section-header">Наши преподаватели</h1>
-				<h2>Ирина Витальевна Кулакова</h2>
 				<img src="img/teacher1.jpg" alt="">
-				<p class="out-teachers__discription">Образование: высшее. Окончила: Башкирский государственный педагогический университет им. М. Акмуллы, Академию труда и социальных отношений г. Москва; ГАОУ ДПО Институт развития образования РБ обучение по программе «Управление современной дошкольной образовательной организацией в свете требований ФГОС ДО» по специальности: «Педагогика и психология», «Финансы и кредит».</p>
-				<div class="section-item">
-					12 лет опыта работы преподавателем
+				<div class="our-teachers__content">
+						<h1 class="section-header">Наши преподаватели</h1>
+						<h2>Ирина Витальевна Кулакова</h2>
+						<p class="out-teachers__discription">Образование: высшее. Окончила: Башкирский государственный педагогический университет им. М. Акмуллы, Академию труда и социальных отношений г. Москва; ГАОУ ДПО Институт развития образования РБ обучение по программе «Управление современной дошкольной образовательной организацией в свете требований ФГОС ДО» по специальности: «Педагогика и психология», «Финансы и кредит».</p>
+						<div class="section-item">
+							12 лет опыта работы преподавателем
+						</div>
+						<div class="section-item">
+							6 лет опыта работы с детьми
+						</div>
 				</div>
-				<div class="section-item">
-					6 лет опыта работы с детьми
-				</div>
+				
 			</section>
 		</div>
 
 		<div class="bonuses-wrap">
 			<section class="bonuses">
 					<h1 class="section-header">Бонусы и подарки</h1>
-					<div class="courses__item">
-					  <h2>Новенький</h2>
-						<p>Бесплатный стартовый комплект учебников и материалов для самостоятельной работы каждому новичку в клубе.</p>
-						<button class="btn">Подробнее</button>
+
+					<div class="bonuses__content-wrap">
+						<div class="courses__item">
+							<h2>Новенький</h2>
+							<p>Бесплатный стартовый комплект учебников и материалов для самостоятельной работы каждому новичку в клубе.</p>
+							<button class="btn">Подробнее</button>
+						</div>
+						<div class="courses__item">
+							<h2>Семья</h2>
+							<p>Скидка 25% на обучение второго ребенка в любой из групп.</p>
+							<button class="btn">Подробнее</button>
+						</div>
 					</div>
-					<div class="courses__item">
-					  <h2>Семья</h2>
-						<p>Скидка 25% на обучение второго ребенка в любой из групп.</p>
-						<button class="btn">Подробнее</button>
-					</div>
+					
 			</section>
 		</div>
 
@@ -165,18 +177,18 @@
 							<a href=""><img src="img/appstore.png" alt="" width="194"></a>				
 						</div>
 				 </div>
-				 <div class="page-footer__item page-footer__conatcs">
-						Фактический и юридический адрес: 
-						105064 Москва, улица, Земляной вал, дом 7
-						Электронная почта: msk@alibra.ru
-						Телефоны: +7 (495) 980-40-25
-						ИНН: 7709802342
-						КПП: 770901001
-						ОГРН: 1087746998008
-						Банк: АО «Райффайзенбанк»
-						БИК: 044525700
-						Корреспондентский счет: 30101810200000000700
-						Расчетный счет: 40702810600001457695
+				 <div class="page-footer__item page-footer__conatcts">
+						Фактический и юридический адрес: <br>
+						105064 Москва, улица, Земляной вал, дом 7<br>
+						Электронная почта: msk@alibra.ru<br>
+						Телефоны: +7 (495) 980-40-25<br>
+						ИНН: 7709802342<br>
+						КПП: 770901001<br>
+						ОГРН: 1087746998008<br>
+						Банк: АО «Райффайзенбанк»<br>
+						БИК: 044525700<br>
+						Корреспондентский счет: 30101810200000000700<br>
+						Расчетный счет: 40702810600001457695<br>
 				 </div>
 				 
 

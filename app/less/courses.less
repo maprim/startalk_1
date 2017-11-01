@@ -1,12 +1,46 @@
+.courses-wrap {
+  background-color: @white-grey;
+}
 
 .courses {
-  background-color: @white-grey;
   padding: 30px 15px;
+
+  .for-desktop-up({
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 100px;
+ });
+
 
   h1 {
     margin-bottom: 30px;
     margin-left: 15px;
+
+    .for-desktop-up({
+      font-size: 45px;
+      margin-bottom: 40px;
+      line-height: 1.44;
+      letter-spacing: 2.3px;
+   });
   }
+}
+
+.courses__item-wrap{
+
+  .for-tablet({
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+ });
+
+ .for-desktop-up({
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.44;
+  justify-content: space-around;
+});
+
 }
 
 
@@ -18,19 +52,59 @@
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: 50%;
+  background-size: contain; 
   margin-bottom: 30px;
+  -webkit-box-shadow: -3px 5px 23px -4px rgba(143,143,143,1);
+  -moz-box-shadow: -3px 5px 23px -4px rgba(143,143,143,1);
+  box-shadow: -3px 5px 23px -4px rgba(143,143,143,1);
+
+    .for-tablet({
+      background-size: contain; 
+      flex-basis: 42%;
+  });
+
+  .for-desktop-up({
+      flex-basis: 41%;
+      padding: 40px 40px 60px 40px;
+      background-size: auto;
+  });
 
   h2 {
     margin-bottom: 15px;
     font-size: 20px;
+
+    .for-desktop-up({
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.31;
+      letter-spacing: 1.6px;
+    });
   }
 
   p {
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.59;
     text-align: left;
     color: #7b7a7a;
     max-width: 75%;
     margin-bottom: 60px;
+
+    .for-tablet({
+      max-width: 70%;
+   });
+
+   .for-desktop-up({
+    font-size: 17px;
+    line-height: 1.59;
+    
+   });
+
+  }
+
+  .btn {
+    width: 164px;
+    height: 56px;
+    border-radius: 28px;
   }
 }
