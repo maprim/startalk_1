@@ -365,12 +365,27 @@ p {
     background-size: contain;
   }
 }
+@media (min-width: 1200px) {
+  .supervision {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
 .supervision h1 {
   margin-bottom: 10px;
 }
 @media (min-width: 760px) {
   .supervision h1 {
     max-width: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .supervision h1 {
+    max-width: 400px;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.44;
+    letter-spacing: 2.3px;
   }
 }
 .supervision p {
@@ -412,6 +427,8 @@ p {
 .feedback-wrap {
   background-image: url("../img/feedback.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
   padding: 15px;
 }
 @media (min-width: 760px) {
@@ -422,8 +439,22 @@ p {
 .feedback {
   padding: 30px 15px;
 }
+@media (min-width: 1200px) {
+  .feedback {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
 .feedback h1 {
   margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .feedback h1 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.44;
+    letter-spacing: 2.3px;
+  }
 }
 .feedback img {
   display: none;
@@ -446,6 +477,14 @@ p {
   .feedback h2 {
     text-align: left;
     margin-left: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .feedback h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
   }
 }
 .feedback p {
@@ -478,6 +517,7 @@ p {
 .feedback span {
   display: inline-block;
   vertical-align: middle;
+  line-height: 1.33;
   max-width: 80%;
   margin-left: 15px;
   color: #666666;
@@ -490,6 +530,14 @@ p {
 @media (min-width: 760px) {
   .carousel {
     padding: 60px 60px 30px 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel {
+    box-sizing: border-box;
+    padding: 85px 50px 85px 80px;
+    width: 920px;
+    margin: 0 auto;
   }
 }
 .carousel .carousel__bk-button,
@@ -525,6 +573,22 @@ p {
     left: 1%;
   }
 }
+@media (min-width: 1200px) {
+  .carousel .carousel__bk-button {
+    left: -10%;
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel .carousel__bk-button i {
+    line-height: 64px;
+  }
+}
 .carousel .carousel__fw-button {
   right: -9%;
 }
@@ -533,15 +597,64 @@ p {
     right: 1%;
   }
 }
+@media (min-width: 1200px) {
+  .carousel .carousel__fw-button {
+    right: -10%;
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel .carousel__fw-button i {
+    line-height: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel__content-wrap p {
+    max-width: 500px;
+  }
+}
 .our-teachers {
   padding: 30px 15px;
+  clear: right;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .our-teachers {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 140px 15px;
+  }
 }
 .our-teachers h1 {
   margin-bottom: 20px;
 }
+@media (min-width: 1200px) {
+  .our-teachers h1 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.44;
+    letter-spacing: 2.3px;
+    margin-bottom: 40px;
+  }
+}
 .our-teachers h2 {
   font-size: 14px;
   margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .our-teachers h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+  }
 }
 .our-teachers .our-teachers_discription {
   font-size: 15px;
@@ -559,6 +672,12 @@ p {
     margin-top: 30px;
   }
 }
+@media (min-width: 1200px) {
+  .our-teachers img {
+    height: 540px;
+    margin: 0;
+  }
+}
 .our-teachers p,
 .our-teachers .section-item {
   font-size: 16px;
@@ -566,14 +685,83 @@ p {
   text-align: left;
   color: #7b7a7a;
 }
+.our-teachers .fw-button {
+  display: inline-block;
+  right: 1.5%;
+  position: absolute;
+  top: 46%;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  line-height: 64px;
+  text-align: center;
+  color: #a3a3a3;
+}
+@media (min-width: 1200px) {
+  .our-teachers__content p {
+    max-width: 540px;
+    font-size: 17px;
+    line-height: 1.59;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-item {
+    display: inline-block;
+  }
+}
+.section-item .teachers-item__label {
+  font-size: 24px;
+  border-radius: 32px;
+  height: 64px;
+  width: 64px;
+  text-align: center;
+  line-height: 60px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #fff;
+  display: block;
+  background-image: linear-gradient(to top, #accb4b, #cae37a);
+}
+@media (min-width: 1200px) {
+  .section-item .teachers-item__label {
+    display: inline-block;
+    margin: 0;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-item span {
+    display: inline-block;
+    max-width: 200px;
+    text-align: left;
+    vertical-align: middle;
+  }
+}
 .bonuses-wrap {
   background-color: #f4f4f4;
 }
 .bonuses {
   padding: 30px 15px;
 }
+@media (min-width: 1200px) {
+  .bonuses {
+    padding: 130px 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
 .bonuses h1 {
   margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .bonuses h1 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.44;
+    letter-spacing: 2.3px;
+  }
 }
 @media (min-width: 760px) {
   .bonuses__content-wrap {

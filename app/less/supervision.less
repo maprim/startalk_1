@@ -13,12 +13,27 @@
     background-size: contain;
  });
 
+ .for-desktop-up({
+    max-width: 1140px;
+    margin: 0 auto;
+});
+
   h1{
     margin-bottom: 10px;
+
     .for-tablet({
       max-width: 250px;
    });
+
+   .for-desktop-up({
+      max-width: 400px;
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 1.44;
+      letter-spacing: 2.3px;
+   });
   }
+
   p {
     color: @grey-font;
     font-size: 15px;

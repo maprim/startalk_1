@@ -1,6 +1,8 @@
 .feedback-wrap {
   background-image: url("../img/feedback.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
   padding: 15px;
 
   .for-tablet({
@@ -14,14 +16,21 @@
 .feedback {
   padding: 30px 15px;
  
-
-  .for-tablet({
-  
- });
-
+  .for-desktop-up({
+    max-width: 1140px;
+    margin: 0 auto;
+  });
   
   h1 {
     margin-bottom: 20px;
+    
+    .for-desktop-up({
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 1.44;
+      letter-spacing: 2.3px;
+
+    });
     
   }
 
@@ -45,6 +54,13 @@
     .for-tablet({
       text-align: left;
       margin-left: 200px;
+   });
+
+   .for-desktop-up({
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.5;
+      letter-spacing: 1px;
    });
   }
 
@@ -80,11 +96,13 @@
   span {
     display: inline-block;
     vertical-align: middle;
+    line-height: 1.33;
     max-width: 80%;
     margin-left: 15px;
     color: @grey-font;
   }
 }
+
 
 .carousel{
   position: relative;
@@ -93,7 +111,14 @@
 
   .for-tablet({
     padding: 60px 60px 30px 80px;
- });;
+ });
+
+ .for-desktop-up({
+  box-sizing: border-box;
+  padding: 85px 50px 85px 80px;
+  width: 920px;
+  margin: 0 auto;
+});
   
 
   .carousel__bk-button,
@@ -129,6 +154,22 @@
       left: 1%;
     });
 
+    .for-desktop-up({
+      left: -10%;
+      width: 64px;
+      height: 64px;
+      background-color: #fff;
+      border-radius: 50%;
+      vertical-align: middle;
+      display: inline-block;
+    });
+
+    i {
+      .for-desktop-up({
+        line-height: 64px;
+      });
+    }
+
   }
 
   .carousel__fw-button {
@@ -137,5 +178,35 @@
     .for-tablet({
       right: 1%;
     });
+
+    .for-desktop-up({
+      right: -10%;
+      width: 64px;
+      height: 64px;
+      background-color: #fff;
+      border-radius: 50%;
+      vertical-align: middle;
+      display: inline-block;
+    });
+
+    i {
+
+      .for-desktop-up({
+        line-height: 64px;
+      });
+    }
   }
+}
+
+.carousel__content-wrap {
+ 
+
+  p {
+
+    .for-desktop-up({
+      max-width: 500px;  
+      
+    });
+  }
+  
 }
