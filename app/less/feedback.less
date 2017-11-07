@@ -67,10 +67,11 @@
   p{
     color: @grey-font;
     line-height: 1.59;
+    font-size: 14px;
     font-weight: 400;
     margin: 0 30px 20px 30px;
 
-    .for-tablet({
+  .for-tablet({
       margin-left: 200px;
    });
     
@@ -96,6 +97,7 @@
   span {
     display: inline-block;
     vertical-align: middle;
+    font-size: 12px;
     line-height: 1.33;
     max-width: 80%;
     margin-left: 15px;
@@ -108,6 +110,8 @@
   position: relative;
   background-color: #fff;
   border-radius: 6px;
+  max-width: 90%;
+  margin: 0 auto;
 
   .for-tablet({
     padding: 60px 60px 30px 80px;
@@ -126,19 +130,22 @@
     color: #a3a3a3;
     display: inline-block;
     position: absolute;
-    top: 35%;
+    top: 40%;
+    background-color: #fff;
     cursor: pointer;
-    height: 64px;
-    width: 64px;
+    height: 32px;
+    width: 32px;
     text-align: center;
-    line-height: 60px;
+    line-height: 30px;
     z-index: 1000;
+    border-radius: 50%;
 
     .for-tablet({
        top: 40%;
     });
 
     i{
+      line-height: 34px;
       .for-tablet({
         font-size: 3rem;
       });
@@ -148,7 +155,8 @@
   }
   
   .carousel__bk-button {
-    left: -9%;
+    left: -15%;
+    vertical-align: middle;
 
     .for-tablet({
       left: 1%;
@@ -156,24 +164,15 @@
 
     .for-desktop-up({
       left: -10%;
-      width: 64px;
-      height: 64px;
-      background-color: #fff;
-      border-radius: 50%;
-      vertical-align: middle;
-      display: inline-block;
+     
     });
-
-    i {
-      .for-desktop-up({
-        line-height: 64px;
-      });
-    }
 
   }
 
   .carousel__fw-button {
-    right: -9%;
+    right: -15%;
+    background-color: #fff;
+    vertical-align: middle;
 
     .for-tablet({
       right: 1%;
@@ -181,31 +180,39 @@
 
     .for-desktop-up({
       right: -10%;
-      width: 64px;
-      height: 64px;
-      background-color: #fff;
-      border-radius: 50%;
-      vertical-align: middle;
-      display: inline-block;
     });
 
-    i {
-
-      .for-desktop-up({
-        line-height: 64px;
-      });
-    }
   }
 }
 
+.carousel__dots {
+   margin: 0 auto;
+   margin-top: 20px;
+   display: block;
+   width: auto;
+   text-align: center;
+  span{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #aecd4f;
+    border-radius: 50%;
+  }
+
+  span.active{
+    background-color: #aecd4f;
+  }
+}
 .carousel__content-wrap {
- 
+    padding: 30px 15px;
 
   p {
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 20px;
 
     .for-desktop-up({
       max-width: 500px;  
-      
+      margin-left: 200px;
     });
   }
   

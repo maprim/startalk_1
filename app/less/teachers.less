@@ -46,12 +46,13 @@
 
 
   img {
-    height: 120px;
+    height: 200px;
     display: inline-block;
     border-radius: 50%;
+    float: right;
+    margin-top: 100px;
 
     .for-tablet({
-      float: right;
       height: 300px;
       margin-top: 30px;
     });
@@ -73,9 +74,9 @@
 
   .fw-button{
     display: inline-block;
-    right: 1.5%;
     position: absolute;
-    top: 46%;
+    right: 3%;    
+    top: 34%;
     background: #fff;
     width: 64px;
     height: 64px;
@@ -83,6 +84,13 @@
     line-height: 64px;
     text-align: center;
     color: #a3a3a3;
+
+    .for-desktop-up({  
+      right: 1.5%;    
+      top: 46%;
+
+    });
+    
   }
 
 }
@@ -90,6 +98,8 @@
 .our-teachers__content{
   
   p{
+    max-width: 65%;
+    margin-bottom: 40px;
 
     .for-desktop-up({
       max-width: 540px;
@@ -116,9 +126,10 @@
     text-align: center;
     line-height:60px;
     margin: 0 auto;
+    margin-right: 10px;
     margin-bottom: 20px;
     color: #fff;
-    display: block;
+    display: inline-block;
     background-image: linear-gradient(to top, #accb4b, #cae37a);
   
     .for-desktop-up({
@@ -130,12 +141,13 @@
   }
   
   span {
-    
-        .for-desktop-up({
-          display: inline-block;
-          max-width: 200px;
-          text-align: left;
-          vertical-align: middle;
+    max-width: 200px;  
+    display: inline-block;  
+    vertical-align: middle;
+
+        .for-desktop-up({          
+        text-align: left;
+
       });
     
   }
